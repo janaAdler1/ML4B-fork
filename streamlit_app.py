@@ -27,6 +27,6 @@ with st.expander("About Project:"):
     st.text('The goal of our project is to classify Tweets by the political party of the author')
 #show one element of your dataset
 with st.expander('Example of dataset'):
-    st.head("Party of Schulz Anja is...")
+    st.header("Party of Schulz Anja is...")
     data = json.load(open('data.json'))
     st.text(linecache.getline('data.json',5))
