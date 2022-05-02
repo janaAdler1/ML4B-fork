@@ -1,54 +1,25 @@
-import pdfkit
-from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
-from datetime import date
+
 import streamlit as st
-from streamlit.components.v1 import iframe
+import pandas as pd
+import numpy as np
+st.title('Image Captioning Group 13')
 
-st.set_page_config(layout="centered", page_icon="🎓", page_title="Diploma Generator")
-st.title("🎓 Diploma PDF Generator")
+with st.expander("The Team"):
+  st.write("Hello, we are Leon Lang, Jean Louis Fichtner and Loredana Bratu and we create this app as a part of our business informatics course ")
+with st.expander("The Mission"):
+  st.write("The purpose of our app is to automatically describe an image with one or more natural language sentences. To generate textual descriptions of images we will use Machine Learning and Deep Learning Techniques.")
+with st.expander("The Dataset"):
+  st.write("Here you can see some examples from our Dataset")
+  col1, col2, col3 = st.columns(3)
 
-st.write(
-    "This app shows you how you can use Streamlit to make a PDF generator app in just a few lines of code!"
-)
+with col1:
+    st.header("Chrysler Logo")
+    st.image("https://img1.d2cmedia.ca/cb5bf24a74832ba/1471/7214770/C/Chrysler-200-2016.jpg")
 
-left, right = st.columns(2)
+with col2:
+    st.header("NIKE Shoe")
+    st.image("https://img.alicdn.com/imgextra/i3/817462628/O1CN01eLHBGX1VHfUMBA1du_!!817462628.jpg")
 
-right.write("Here's the template we'll be using:")
-
-right.image("template.png", width=300)
-
-env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
-template = env.get_template("template.html")
-
-
-left.write("Fill in the data:")
-form = left.form("template_form")
-student = form.text_input("Student name")
-course = form.selectbox(
-    "Choose course",
-    ["Report Generation in Streamlit", "Advanced Cryptography"],
-    index=0,
-)
-grade = form.slider("Grade", 1, 100, 60)
-submit = form.form_submit_button("Generate PDF")
-
-if submit:
-    html = template.render(
-        student=student,
-        course=course,
-        grade=f"{grade}/100",
-        date=date.today().strftime("%B %d, %Y"),
-    )
-
-    pdf = pdfkit.from_string(html, False)
-    st.balloons()
-
-    right.success("🎉 Your diploma was generated!")
-    # st.write(html, unsafe_allow_html=True)
-    # st.write("")
-    right.download_button(
-        "⬇️ Download PDF",
-        data=pdf,
-        file_name="diploma.pdf",
-        mime="application/octet-stream",
-    )
+with col3:
+    st.header("Girl in a white dress")
+    st.image("https://static2.yan.vn/YanNews/2167221/202004/co-luc-na-trat-duoc-khen-nuc-no-vi-qua-de-thuong-nho-tang-can-93c37ecb.jpeg")
