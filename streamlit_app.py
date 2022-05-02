@@ -21,7 +21,7 @@ with col1:
 with col2:
     st.header("Jana Adler")
     #st.markdown(f'<h1 style="color:#000000;font-size:16px;">{"Jana Adler"}</h1>', unsafe_allow_html=True)
-    st.image("https://www.sprit-plus.de/sixcms/media.php/5172/thumbnails/Mann_Fragezeichen.jpg.31563300.jpg")
+    st.image("image.png")
 
 with col3:
     st.header("Sergei Mezhonnov")
