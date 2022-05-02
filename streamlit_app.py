@@ -35,4 +35,4 @@ with st.expander('Example of dataset'):
     st.text(linecache.getline('data.json',6))
     
 if st.button("What is a classificator?"):
-    st.image("https://towardsdatascience.com/top-machine-learning-algorithms-for-classification-2197870ff501")
+    st.image("https://miro.medium.com/max/1400/1*R6Rbcks-pGO0SkhCINrP0g.png")
