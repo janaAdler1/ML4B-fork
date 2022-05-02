@@ -28,4 +28,4 @@ with st.expander("About Project:"):
 with st.expander('Example of dataset'):
     data = json.load(open('data.json'))
     import linecache
-    st.text(linecache.getline(data,7))
+    st.text(linecache.getline('data.json',7))
