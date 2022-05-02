@@ -26,7 +26,7 @@ with col3:
     st.image("https://scontent-frt3-2.xx.fbcdn.net/v/t31.18172-8/20451827_1559088087491677_5562632512013699296_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEdsPUBJzyPOZFs7ylgC0hgD7d7OvNp0kMPt3s682nSQ3wLFAZVTOrmLSOyHzD2mTt9LJKE7h7ZjiAONvU_-HJN&_nc_ohc=6ihYdGJVRsYAX_5hGRe&_nc_ht=scontent-frt3-2.xx&oh=00_AT893UIInBTyBmNpf071lnSEZBuEZS3igGFkVQEABTd9rg&oe=6294469E")
 
 #present your project
-with st.expander("About Project:"):
+with st.expander("Our Goal):
     st.text('The goal of our project is to classify Tweets by the political party of the author')
 #show one element of your dataset
 with st.expander('Example of dataset'):
