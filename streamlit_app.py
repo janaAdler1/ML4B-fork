@@ -34,6 +34,9 @@ with st.expander('Example of dataset'):
     st.header("Party of Schulz Anja is...")
     data = json.load(open('data.json'))
     st.text(linecache.getline('data.json',6))
-    
+   
 if st.button("What is a classificator?"):
-    st.image("https://miro.medium.com/max/1400/1*R6Rbcks-pGO0SkhCINrP0g.png")
+    placeholder = st.image("https://miro.medium.com/max/1400/1*R6Rbcks-pGO0SkhCINrP0g.png")
+    but = st.button("I already know")
+    if but:
+        placeholer = st.remove()
