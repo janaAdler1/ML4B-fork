@@ -16,7 +16,7 @@ with st.expander("Our Team:"):
 with col1:
     #st.header("Jan Amend")
     st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Jan Amend"}</h1>', unsafe_allow_html=True)
-    st.image("https://www.sprit-plus.de/sixcms/media.php/5172/thumbnails/Mann_Fragezeichen.jpg.31563300.jpg")
+    st.image("image_jan.jpeg")
 
 with col2:
     #st.header("Jana Adler")
