@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import json
+import linecache
 
 #Present your team
 st.title('Political Party Classification')
@@ -23,10 +24,9 @@ with col3:
 
 #present your project
 with st.expander("About Project:"):
-    st.text('Bla Bla Bla')
+    st.text('The goal of our project is to classify Tweets by the political party of the author')
 #show one element of your dataset
 with st.expander('Example of dataset'):
-    l1, l2, l3 = st.lines(3)
+    st.head("Party of Schulz Anja is...")
     data = json.load(open('data.json'))
-    import linecache
-    st.text(linecache.getline('data.json',4))
+    st.text(linecache.getline('data.json',5))
