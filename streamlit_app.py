@@ -42,7 +42,7 @@ with col3:
 with st.expander('Example of dataset'):
     st.text('**Tweet of Anja Schulz:** "Das Spiel macht wirklich Freude. Ein Traeumchen"')
     if st.button("Party of tweeting Member of Parliament is..."):
-        time.sleep(3)
+        #time.sleep(3)
         data = json.load(open('data.json'))
         st.markdown(data['account_data']['Partei'])
 
