@@ -6,7 +6,7 @@ import linecache
 
 #Present your team
 st.title('Political Party Classification')
-st.subtitle("Our Goal")
+st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
 with st.expander("Our Team:"):
