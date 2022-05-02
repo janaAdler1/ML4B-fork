@@ -21,7 +21,7 @@ with col1:
 with col2:
     st.header("Jana Adler")
     #st.markdown(f'<h1 style="color:#000000;font-size:16px;">{"Jana Adler"}</h1>', unsafe_allow_html=True)
-    st.image("image.png")
+    st.image("image.jpeg")
 
 with col3:
     st.header("Sergei Mezhonnov")
