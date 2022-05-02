@@ -26,6 +26,7 @@ with st.expander("About Project:"):
     st.text('Bla Bla Bla')
 #show one element of your dataset
 with st.expander('Example of dataset'):
+    l1, l2, l3 = st.lines(3)
     data = json.load(open('data.json'))
     import linecache
-    st.text(linecache.getline('data.json',7))
+    st.text(linecache.getline('data.json',4))
