@@ -5,7 +5,7 @@ import json
 import linecache
 
 st.title('Political Party Classification')
-st.set_page_config(page_title="Political Party Classificator")
+st.set_page_config(page_icon="🐤", page_title="Sentiment Analysis of Tweets")
 
 #present your project
 st.subheader("Our Goal")
