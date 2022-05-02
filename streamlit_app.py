@@ -33,13 +33,13 @@ with col3:
 with st.expander('Example of dataset'):
     #st.header("Party of Schulz Anja is...")
     #data = json.load(open('data.json'))
-    st.text(linecache.getline('data.json',6))
+    #st.text(linecache.getline('data.json',6))
     st.text('**Tweet of Anja Schulz:** "Das Spiel macht wirklich Freude. Ein Traeumchen"')
     if st.button("Party of tweeting Member of Parliament is..."):
         time.sleep(3)
         data = json.load(open('data.json'))
         st.markdown(data['account_data']['Partei'])
-   
+
 if st.button("What is a classificator?"):
     placeholder = st.image("https://miro.medium.com/max/1400/1*R6Rbcks-pGO0SkhCINrP0g.png")
     but = st.button("I already know")
