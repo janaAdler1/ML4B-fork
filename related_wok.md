@@ -1,7 +1,12 @@
-## Related Work
+# Related Work
 
-# Jan
+## Jan
 
-# Jana
+## Jana
+- https://jisajournal.springeropen.com/articles/10.1186/s13174-018-0089-0
+- https://towardsdatascience.com/building-a-user-classifier-using-twitter-data-283dfd0c0e59 --> nur basic idee
+- https://pdf.co/blog/classifying-tweets-via-machine-learning-in-python
+- https://www.tensorflow.org/tutorials/keras/text_classification -> Text Klassifikation inkl. Code
+- https://towardsdatascience.com/understanding-nlp-word-embeddings-text-vectorization-1a23744f7223#:~:text=Word%20Embeddings%20or%20Word%20vectorization,into%20numbers%20are%20called%20Vectorization. -> Vektorisierung von Text
 
-# Sergei
+## Sergei
