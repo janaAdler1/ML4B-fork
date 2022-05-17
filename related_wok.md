@@ -15,3 +15,9 @@
 ## Sergei
 - https://jdvala.github.io/blog.io/thesis/2018/05/11/German-Preprocessing.html
 - https://towardsdatascience.com/nlp-classification-in-python-pycaret-approach-vs-the-traditional-approach-602d38d29f06
+## Problems and surprises
+ - Dataset with 8 GB
+ - Tweets are german and we must german letter adapt
+ - More examples with sentiment analysis 
+## What is important for project
+- NLP text Vectorization
