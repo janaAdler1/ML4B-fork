@@ -11,6 +11,7 @@
 - https://medium.com/swlh/tweets-classification-and-clustering-in-python-b107be1ba7c7 
 - https://github.com/CharaZhu/Twitter-Sentiment-Analysis
 - https://paperswithcode.com/task/text-classification
+- https://towardsdatascience.com/binary-classification-of-imdb-movie-reviews-648342bc70dd
 
 ## Sergei
 - https://jdvala.github.io/blog.io/thesis/2018/05/11/German-Preprocessing.html
