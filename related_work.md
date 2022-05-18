@@ -41,7 +41,10 @@ https://link.springer.com/article/10.1007/s00500-020-05209-8
 - https://towardsdatascience.com/nlp-classification-in-python-pycaret-approach-vs-the-traditional-approach-602d38d29f06
 ## Problems and surprises
  - Dataset with 8 GB
- - Tweets are german and we must german letter adapt
+ - Classification into parties can become relatively difficult if they have overlapping views (e.g. SPD and CDU)
+ - Data set must first be prepared at great effort
+ - Tweets are German and we need to adapt German letters
  - More examples with sentiment analysis 
 ## What is important for project
 - NLP text Vectorization
+- Text classification through supervised machine learning
