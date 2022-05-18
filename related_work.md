@@ -1,14 +1,6 @@
 # Related Work
 
 ## Jan
-https://hal.archives-ouvertes.fr/file/index/docid/725096/filename/dynam-proceedings.pdf#page=20
-
--> generelle Schwierigkeiten bei der Einordnung in Parteien
-
-https://sentic.net/predicting-political-sentiments-of-voters-from-twitter.pdf
-
--> Ähnlich zu unserem Thema:
-Analyse der Wähler (nicht Parteien) in Indien anhand derer Aktivitäten auf Twitter (durch Neuronale Netze und durch Multinomiale logistische Regression {-> Statistische Methode,  kein ML}
 
 https://arxiv.org/pdf/2202.00396.pdf
 -> Sentiment Analyse 
@@ -24,6 +16,15 @@ https://reader.elsevier.com/reader/sd/pii/S1110016821000806?token=0ECA4C78E9DD0E
 
 https://link.springer.com/article/10.1007/s00500-020-05209-8
 -> Text Klassifizierung mit ML
+
+https://hal.archives-ouvertes.fr/file/index/docid/725096/filename/dynam-proceedings.pdf#page=20
+
+-> generelle Schwierigkeiten bei der Einordnung in Parteien
+
+https://sentic.net/predicting-political-sentiments-of-voters-from-twitter.pdf
+
+-> Ähnlich zu unserem Thema:
+Analyse der Wähler (nicht Parteien) in Indien anhand derer Aktivitäten auf Twitter (durch Neuronale Netze und durch Multinomiale logistische Regression {-> Statistische Methode,  kein ML}
 
 ## Jana
 - https://jisajournal.springeropen.com/articles/10.1186/s13174-018-0089-0
