@@ -43,7 +43,7 @@ https://link.springer.com/article/10.1007/s00500-020-05209-8
  - Dataset with 8 GB
  - Classification into parties can become relatively difficult if they have overlapping views (e.g. SPD and CDU)
  - Data set must first be prepared at great effort
- - Tweets are German and we need to adapt German letters
+ - Tweets are German and we need to adapt German letters (see: ppc.py)
  - More examples with sentiment analysis 
 ## What is important for project
 - NLP text Vectorization
