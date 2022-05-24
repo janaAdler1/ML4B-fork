@@ -52,8 +52,7 @@ if st.button("What is a classificator?"):
     if but:
         placeholer = st.remove()
         
-st.code('
-"""
+st.code(
 ##########Extract text of tweet and name of party
 party = []
 files = glob.glob('data/*.jl')
@@ -97,4 +96,4 @@ df = pd.read_csv('test.csv', encoding = 'unicode_escape')
 
 #Add extra Columns
 df['Chars'] = df['Tweet'].str.len()
-df['Words'] = df['Tweet'].str.split().str.len()', python)
+df['Words'] = df['Tweet'].str.split().str.len(), python)
