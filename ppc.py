@@ -21,6 +21,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import classification_report
 from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
 """
 ##########Extract text of tweet and name of party
 party = []
@@ -58,13 +60,17 @@ stop_words = stopwords.words('german')
 df['Tweet'] = df['Tweet'].map(lambda x : ' '.join([w for w in x.split() if w not in stop_words]))
 
 df.to_csv('test.csv', index=False, columns = ['Party', 'Tweet'])
+###########remove NaN rows from Dataset
+df = pd.read_csv('test.csv')
+df1 = df.dropna(thresh=2)
+df1.to_csv('test.csv', index=False, columns = ['Party', 'Tweet'])
 """
 df = pd.read_csv('test.csv')
 X = df['Tweet'].values.astype('U')
 y = df['Party']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state = 42)
-#my_tags = df['Party'].unique()
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+my_tags = df['Party'].unique()
 #Naive Bayes Classifier
 nb = Pipeline([('vect', CountVectorizer()),
                ('tfidf', TfidfTransformer()),
@@ -72,19 +78,20 @@ nb = Pipeline([('vect', CountVectorizer()),
               ])
 nb.fit(X_train, y_train)
 
-tweet = "Menschenwürde und Grundrechte. Demokratie, Rechtsstaat, Freiheit, Sozialstaat, Republik und Föderalismus sowie Auftrag zur europäischen Einigung. Unser Grundgesetz ist eine kluge Verfassung".lower()
-
-
-nb_pred = nb.predict([tweet])
-nb_pred
+nb_pred = nb.predict(X_test)
+##Evaluation
+print('accuracy %s' % accuracy_score(nb_pred, y_test))
+print(classification_report(y_test, nb_pred, target_names=my_tags))
 #Linear Support Vector Machine
 sgd = Pipeline([('vect', CountVectorizer()),
                 ('tfidf', TfidfTransformer()),
-                ('clf', SGDClassifier(loss='hinge', penalty='l2',alpha=1e-3, random_state=42, max_iter=5, tol=None)),
+                ('clf', SGDClassifier(loss='hinge', penalty='l2',alpha=1e-3, random_state=12, max_iter=5, tol=None)),
                ])
 sgd.fit(X_train, y_train)
-sgd_pred = sgd.predict([tweet])
-sgd_pred
+sgd_pred = sgd.predict(X_test)
+##Evaluation
+print('accuracy %s' % accuracy_score(sgd_pred, y_test))
+print(classification_report(y_test, sgd_pred, target_names=my_tags))
 
 #Logistik Regression
 logreg = Pipeline([('vect', CountVectorizer()),
@@ -92,5 +99,16 @@ logreg = Pipeline([('vect', CountVectorizer()),
                 ('clf', LogisticRegression(n_jobs=1, C=1e5)),
                   ])
 logreg.fit(X_train, y_train)
+lg_pred = logreg.predict(X_test)
+##Evaluation
+print('accuracy %s' % accuracy_score(lg_pred, y_test))
+print(classification_report(y_test, lg_pred, target_names=my_tags))
+
+##########test
+tweet = "Machen Deutschland frei".lower()
+nb_pred = nb.predict([tweet])
+nb_pred
+sgd_pred = sgd.predict([tweet])
+sgd_pred
 lg_pred = logreg.predict([tweet])
 lg_pred
