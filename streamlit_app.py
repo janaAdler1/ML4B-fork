@@ -53,3 +53,4 @@ if st.button("What is a classificator?"):
         placeholer = st.remove()
         
 st.dataframe(df, 200, 100)
+st.code()
