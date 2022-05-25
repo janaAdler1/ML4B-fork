@@ -100,3 +100,4 @@ df = pd.read_csv('test.csv', encoding = 'unicode_escape')
 df['Chars'] = df['Tweet'].str.len()
 df['Words'] = df['Tweet'].str.split().str.len()'''
 st.code(code, language='python')
+
