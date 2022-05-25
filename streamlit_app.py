@@ -51,7 +51,9 @@ if st.button("What is a classificator?"):
     but = st.button("I already know")
     if but:
         placeholer = st.remove()
-        
+
+st.subheader("Data preparation: Excerpt from the code")
+
 
 code = '''party = []
 files = glob.glob('data/*.jl')
