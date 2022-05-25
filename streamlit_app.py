@@ -52,5 +52,7 @@ if st.button("What is a classificator?"):
     if but:
         placeholer = st.remove()
         
-st.dataframe(df, 200, 100)
-st.code()
+
+code = '''def hello():
+     print("Hello, Streamlit!")'''
+st.code(code, language='python')
