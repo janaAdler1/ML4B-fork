@@ -10,33 +10,34 @@ selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo
     menu_icon="cast", default_index=0, orientation="horizontal",
 )
 selected
-st.title('Political Party Classification')
-#present your project
-st.subheader("Our Goal")
-st.text('The goal of our project is to classify Tweets by the political party of the author')
-
-# 1. as sidebar menu
-
-
-#present your team
-with st.expander("Our Team:"):
-    col1, col2, col3 = st.columns(3)
-with col1:
-    st.image("image_jan.jpeg", caption = 'Jan Amend')
-with col2:
-    st.image("image.jpeg", caption = "Jana Adler")
-
-with col3:
-    st.image("image_ser.jpg", caption = 'Sergei Mezhonnov')
-
 if selected=="Home":
+    st.title('Political Party Classification')
+    #present your project
+    st.subheader("Our Goal")
+    st.text('The goal of our project is to classify Tweets by the political party of the author')
+
+    # 1. as sidebar menu
+
+
+    #present your team
+    with st.expander("Our Team:"):
+        col1, col2, col3 = st.columns(3)
+    with col1:
+        st.image("image_jan.jpeg", caption = 'Jan Amend')
+    with col2:
+        st.image("image.jpeg", caption = "Jana Adler")
+
+    with col3:
+        st.image("image_ser.jpg", caption = 'Sergei Mezhonnov')
+
+if selected=="Dataset":
     st.text('Our dataset is 8GB of JL-Data...')
     st.image("https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535", caption = "My Notebook with 4GB RAM")
     if st.checkbox("Show me example"):
         data = json.load(open('data.json'))
         st.write(data)   
 
-with st.expander('Data Preparation'):
+if selected=="Data Preparation":
     st.text("Before Analyse to start we need to prepare our dataframe.")
     st.text("To do this, we use several functions:")
     if st.checkbox("Count of Tweets"):
@@ -45,8 +46,7 @@ with st.expander('Data Preparation'):
         st.pyplot(fig1)
     
 
-with st.expander("Prediction"):
-   
+if selected=="Live Demo":  
     if st.button("Prepare"):
         st.write("prepare")
     
