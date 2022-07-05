@@ -16,6 +16,7 @@ if selected=="Home":
     st.markdown("<h2 style='text-align: center'>Our Goal</h2>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center'>The goal of our project is to classify Tweets of german politicans by the political party of the author. However, we don't just want to research the politicians and cathegorize them manually, we want to use Machine Learning algorithms.</p>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center'>Our Team</h2>", unsafe_allow_html=True)
+    st.markdown("<input type='submit' style='float:right'>Submit</input>")
 
     #present your team
     col1, col2, col3 = st.columns(3)
