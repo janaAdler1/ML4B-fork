@@ -12,6 +12,8 @@ selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo
 )
 
 if selected=="Home":
+    st.markdown("<h1 style='text-align: center'>Political Party Classification</h1>", unsafe_allow_html=True)
+
     st.title('Political Party Classification')
     st.subheader("Our Goal")
     st.text('The goal of our project is to classify Tweets by the political party of the author')
