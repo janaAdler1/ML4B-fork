@@ -40,16 +40,19 @@ if selected=="Dataset":
     st.markdown("<h1 style='text-align: center'>Twitter Dataset</h1>", unsafe_allow_html=True)
     st.text('Our dataset is a JSON file consisting of official tweets from members of the german parliament as of march 2021. Thus it includes tweets from CDU/CSU, SPD, Die Gruenen, Die Linken, AFD, etc. \n The main problem one will soon discover is...')
     
-    st.markdown("<h5>our dataset is 8GB of JL-Data...</h5>", unsafe_allow_html=True)
+    st.markdown("<h5>...our dataset is 8GB of JL-Data...</h5>", unsafe_allow_html=True)
 
     st.image("https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535", caption = "My Notebook with 4GB RAM")
     if st.checkbox("Show me example"):
         data = json.load(open('data.json'))
-        st.write(data)   
+        st.write(data)
 
 if selected=="Process":
     with st.expander("Business Understanding"):
-        st.text("Everybody knows Tweets")
+        st.text("Everybody knows Tweets. You can retweet a tweet or you can create a new one completly on your own. There are almost no limitis to what you can include in your tweet. You can use text, numbers and emojicons.")
+        st.text("Despite the almost unlimited possibilites to write a tweet one might use same patterns - like special emojis or syntax - over and over again. Furthermore members of some political parties tend to write more about special topics like 'football' and less about other topics like 'gardening'")
+        st.text("The interesting part is to find exactly these patterns. Some are quite obvious and others are rather inconspicuous. However, we do not need to find those patterns on our own and read all of the 5000 tweets, we will use KI-algorithms for this!")
+
     with st.expander("Data Understanding"):
         st.text("blub")
     with st.expander("Data Preparation"):
