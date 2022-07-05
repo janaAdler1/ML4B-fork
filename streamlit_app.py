@@ -2,8 +2,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classification")
-
-"""import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import pandas_profiling
 import json
@@ -33,7 +32,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
-"""
+
 
 st.title('Political Party Classification')
 #present your project
@@ -41,7 +40,7 @@ st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
 #present your team
-"""with st.expander("Our Team:"):
+with st.expander("Our Team:"):
     col1, col2, col3 = st.columns(3)
 with col1:
     st.image("image_jan.jpeg", caption = 'Jan Amend')
@@ -214,4 +213,4 @@ with st.expander("Prediction"):
         if st.button("Evaluation"):
             #st.write('accuracy %s' % accuracy_score(y_test, lg_pred_res))
             st.text('Model Report:\n ' + classification_report(y_test, lg_pred_res, target_names=my_tags))
-"""
+
