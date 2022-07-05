@@ -14,8 +14,8 @@ st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classi
         "nav-link-selected": {"background-color": "green"},
         }
     )"""
-selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo'], 
+    icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
         "container": {"padding": "0!important", "background-color": "#fafafa"},
@@ -24,7 +24,7 @@ selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'],
         "nav-link-selected": {"background-color": "green"},
     }
 )
-selected3
+selected
 st.title('Political Party Classification')
 #present your project
 st.subheader("Our Goal")
