@@ -4,7 +4,7 @@ import numpy as np
 from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classification")
-selected = option_menu(None, ["Home", "Dataset", "Data Preparation", 'Live Demo'], 
+"""selected = option_menu(None, ["Home", "Dataset", "Data Preparation", 'Live Demo'], 
     icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
     menu_icon="cast", default_index=0, orientation="horizontal"
     styles={
@@ -13,8 +13,18 @@ selected = option_menu(None, ["Home", "Dataset", "Data Preparation", 'Live Demo'
         "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
         "nav-link-selected": {"background-color": "green"},
         }
-    )
-selected
+    )"""
+selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal",
+    styles={
+        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "25px"}, 
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "green"},
+    }
+)
+selected3
 st.title('Political Party Classification')
 #present your project
 st.subheader("Our Goal")
