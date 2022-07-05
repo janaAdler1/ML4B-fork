@@ -11,10 +11,10 @@ st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
 # 1. as sidebar menu
-with st.sidebar:
-    selected = option_menu("Main Menu", ["Home", 'Settings'], 
-        icons=['house', 'gear'], menu_icon="cast", default_index=1)
-    selected
+selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal")
+selected2
 
 #present your team
 with st.expander("Our Team:"):
