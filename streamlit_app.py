@@ -38,7 +38,7 @@ st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
 #present your team
-with st.expander("Our Team:"):
+"""with st.expander("Our Team:"):
     col1, col2, col3 = st.columns(3)
 with col1:
     st.image("image_jan.jpeg", caption = 'Jan Amend')
@@ -211,3 +211,4 @@ with st.expander("Prediction"):
         if st.button("Evaluation"):
             #st.write('accuracy %s' % accuracy_score(y_test, lg_pred_res))
             st.text('Model Report:\n ' + classification_report(y_test, lg_pred_res, target_names=my_tags))
+"""
