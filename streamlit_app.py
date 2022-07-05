@@ -21,8 +21,11 @@ if selected=="Home":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image("image_jan.jpeg", caption = 'Jan Amend')
+        st.markdown("<h5 style='text-align: center'>Jan Amend </h5>", unsafe_allow_html=True)
+
         st.markdown("<h6 style='text-align: center'>4th semester Wirtschaftsinformatik</h6>", unsafe_allow_html=True)
         st.text("TEXT")
+
     with col2:
         st.image("image.jpeg", caption = "Jana Adler")
         st.markdown("<h6 style='text-align: center'>4th semester Wirtschaftsinformatik</h6>", unsafe_allow_html=True)
