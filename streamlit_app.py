@@ -4,7 +4,7 @@ import numpy as np
 # insert
 from streamlit_option_menu import option_menu
 
-st.set_page_config(page_icon="⭐", page_title="Political Party Tweet Classification")
+st.set_page_config(page_icon="⭐", page_title="Political Party Tweet Classification", layout="wide")
 
 selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo', 'Blub'], 
     icons=['house', 'file-earmark-text', "cpu", 'collection-play', "cpu"], 
