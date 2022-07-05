@@ -32,7 +32,7 @@ if selected=="Home":
         st.text("Hi, my name is Jana and I'm currently part of a dual studies programm \n at DATEV where im focusing on internet security. \n Since ML and AI is a pretty huge deal in web security \n I'm very invested in this topic. \n In my spare time I like to dance and \n go for a ride on my motorcycle.")
     with col3:
         st.image("image_ser.jpg")
-        st.markdown("<h5 style='text-align: center color=#c7c7c7'>Sergei Mezhonnov </h5>", unsafe_allow_html=True)
+        st.markdown("<h5 style='text-align: center, color=#c7c7c7'>Sergei Mezhonnov </h5>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: center'>4th semester Wirtschaftsinformatik</h6>", unsafe_allow_html=True)
         st.text("TEXT")
 
