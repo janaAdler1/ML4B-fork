@@ -4,17 +4,17 @@ import numpy as np
 from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classification")
-
+selected = option_menu(None, ["Home", "Dataset", "Data Preparation", 'Live Demo'], 
+    icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
+    menu_icon="cast", default_index=0, orientation="horizontal")
+selected
 st.title('Political Party Classification')
 #present your project
 st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
 # 1. as sidebar menu
-selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
-selected2
+
 
 #present your team
 with st.expander("Our Team:"):
