@@ -38,8 +38,10 @@ if selected=="Home":
 
 if selected=="Dataset":
     st.markdown("<h1 style='text-align: center'>Twitter Dataset</h1>", unsafe_allow_html=True)
-    st.text('Our dataset is a JSON file consisting of official tweets from members of the german parliament as of march 2021. Thus it includes tweets from CDU/CSU, SPD, Die Gruenen, Die Linken, AFD, etc. /n The main problem one will soon discover is...')
-    st.text('Our dataset is 8GB of JL-Data...')
+    st.text('Our dataset is a JSON file consisting of official tweets from members of the german parliament as of march 2021. Thus it includes tweets from CDU/CSU, SPD, Die Gruenen, Die Linken, AFD, etc. \n The main problem one will soon discover is...')
+    
+    st.markdown("<h5 style='text-align: center'>our dataset is 8GB of JL-Data...</h5>", unsafe_allow_html=True)
+
     st.image("https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535", caption = "My Notebook with 4GB RAM")
     if st.checkbox("Show me example"):
         data = json.load(open('data.json'))
