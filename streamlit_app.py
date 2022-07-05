@@ -13,8 +13,8 @@ selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo
 
 if selected=="Home":
     st.markdown("<h1 style='text-align: center'>Political Party Classification</h1>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center'>Our Goal</h2>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center'The goal of our project is to classify Tweets by the political party of the author</p>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center'>Our Goal</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center'>The goal of our project is to classify Tweets by the political party of the author</p>", unsafe_allow_html=True)
 
     # 1. as sidebar menu
 
