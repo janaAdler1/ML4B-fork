@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classification")
 
@@ -9,6 +10,11 @@ st.title('Political Party Classification')
 st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
+# 1. as sidebar menu
+with st.sidebar:
+    selected = option_menu("Main Menu", ["Home", 'Settings'], 
+        icons=['house', 'gear'], menu_icon="cast", default_index=1)
+    selected
 with st.sidebar:
     st.button("Text")
 #present your team
