@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+"""import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import pandas_profiling
 import json
@@ -31,7 +31,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
-
+"""
 st.title('Political Party Classification')
 #present your project
 st.subheader("Our Goal")
