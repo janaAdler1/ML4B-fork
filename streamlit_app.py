@@ -6,8 +6,8 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="⭐", page_title="Political Party Tweet Classification")
 
-selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo'], 
-    icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
+selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo', 'Blub'], 
+    icons=['house', 'file-earmark-text', "cpu", 'collection-play', "cpu"], 
     menu_icon="cast", default_index=0, orientation="horizontal",
 )
 
