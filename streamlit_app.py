@@ -18,10 +18,10 @@ selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo
     icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
-        "container": {"padding": "50px", "background-color": "#fafafa"},
+        "container": {"padding": "50px", "background-color": "gray"},
         "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "green"},
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#ff751a"},
+        "nav-link-selected": {"background-color": "#990033"},
     }
 )
 selected
