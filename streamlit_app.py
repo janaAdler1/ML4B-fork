@@ -19,8 +19,8 @@ selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
         "container": {"padding": "50px", "background-color": "#F5F5F5"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#ff751a"},
+        "icon": {"color": "#606060", "font-size": "25px"}, 
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#ff751a", "padding"="50px"},
         "nav-link-selected": {"background-color": "#990033"},
     }
 )
