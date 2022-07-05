@@ -14,7 +14,7 @@ selected = option_menu(None, ["Home", "Dataset",  "Process", 'Live Demo', 'Blub'
 if selected=="Home":
     st.markdown("<h1 style='text-align: center'>Political Party Classification</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center'>Our Goal</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center'>The goal of our project is to classify Tweets of german politicans by the political party of the author</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center'>The goal of our project is to classify Tweets of german politicans by the political party of the author. However, we don't just want to research the politicians and cathegorize them manually, we want to use Machine Learning algorithms.</p>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center'>Our Team</h2>", unsafe_allow_html=True)
 
     #present your team
@@ -35,6 +35,10 @@ if selected=="Dataset":
         st.write(data)   
 
 if selected=="Process":
+    with st.expander("Business Understanding"):
+        st.text("Everybody knows Tweets")
+    with st.expander("Data Understanding"):
+        st.text("blub")
     with st.expander("Data Preparation"):
         st.text("Before Analyse to start we need to prepare our dataframe.")
         st.text("To do this, we use several functions:")
@@ -42,7 +46,12 @@ if selected=="Process":
             fig1 = plt.figure(figsize=(8,6))
             df.groupby('party').tweet_prep.count().plot.bar(ylim=0)
             st.pyplot(fig1)
-    
+    with st.expander("Modeling"):
+        st.text("blub")
+    with st.expander("Evaluation"):
+        st.text("blub")
+    with st.expander("Deployment"):
+        st.text("blub")
 
 if selected=="Live Demo":  
     if st.button("Prepare"):
