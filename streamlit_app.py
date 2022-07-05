@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="⭐", page_title="Political Party Tweet Classification", layout="wide")
 
-selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo', 'Blub'], 
+selected = option_menu(None, ["Home", "Dataset",  "Process", 'Live Demo', 'Blub'], 
     icons=['house', 'file-earmark-text', "cpu", 'collection-play', "cpu"], 
     menu_icon="cast", default_index=0, orientation="horizontal",
 )
@@ -34,13 +34,14 @@ if selected=="Dataset":
         data = json.load(open('data.json'))
         st.write(data)   
 
-if selected=="Data Preparation":
-    st.text("Before Analyse to start we need to prepare our dataframe.")
-    st.text("To do this, we use several functions:")
-    if st.checkbox("Count of Tweets"):
-        fig1 = plt.figure(figsize=(8,6))
-        df.groupby('party').tweet_prep.count().plot.bar(ylim=0)
-        st.pyplot(fig1)
+if selected=="Process":
+    with st.expander("Data Preparation"):
+        st.text("Before Analyse to start we need to prepare our dataframe.")
+        st.text("To do this, we use several functions:")
+        if st.checkbox("Count of Tweets"):
+            fig1 = plt.figure(figsize=(8,6))
+            df.groupby('party').tweet_prep.count().plot.bar(ylim=0)
+            st.pyplot(fig1)
     
 
 if selected=="Live Demo":  
