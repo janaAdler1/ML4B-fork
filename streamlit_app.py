@@ -36,7 +36,6 @@ with st.expander('Data Preparation'):
     
 
 with st.expander("Prediction"):
-    stop_words = stopwords.words('german')    
    
     if st.button("Prepare"):
         st.write("prepare")
