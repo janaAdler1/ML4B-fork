@@ -11,9 +11,9 @@ st.subheader("Our Goal")
 st.text('The goal of our project is to classify Tweets by the political party of the author')
 
 with st.sidebar:
-    selectes=option_menu(
-        manu_title="Menue",
-        options=["A", "B"])
+    selected = option_menu("Main Menu", ["Home", 'Settings'], 
+        icons=['house', 'gear'], menu_icon="cast", default_index=1)
+    selected
 #present your team
 with st.expander("Our Team:"):
     col1, col2, col3 = st.columns(3)
