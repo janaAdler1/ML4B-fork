@@ -3,26 +3,11 @@ import streamlit as st
 import numpy as np
 from streamlit_option_menu import option_menu
 
-st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classification")
-"""selected = option_menu(None, ["Home", "Dataset", "Data Preparation", 'Live Demo'], 
-    icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
-    menu_icon="cast", default_index=0, orientation="horizontal"
-    styles={
-        "container": {"padding": "50px", "background-color": "#fafafa"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "green"},
-        }
-    )"""
+st.set_page_config(page_icon="⭐", page_title="Political Party Tweet Classification")
+
 selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo'], 
     icons=['house', 'file-earmark-text', "cpu", 'collection-play'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
-    styles={
-        "container": {"padding": "50px", "background-color": "#F5F5F5"},
-        "icon": {"color": "#606060", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#ff751a", "padding"="50px"},
-        "nav-link-selected": {"background-color": "#990033"},
-    }
 )
 selected
 st.title('Political Party Classification')
@@ -44,7 +29,7 @@ with col2:
 with col3:
     st.image("image_ser.jpg", caption = 'Sergei Mezhonnov')
 
-with st.expander('Example of dataset'):
+if selected=="Home":
     st.text('Our dataset is 8GB of JL-Data...')
     st.image("https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535", caption = "My Notebook with 4GB RAM")
     if st.checkbox("Show me example"):
