@@ -32,11 +32,13 @@ if selected=="Home":
         st.text("Hi, my name is Jana and I'm currently part of a dual studies programm \n at DATEV where im focusing on internet security. \n Since ML and AI is a pretty huge deal in web security \n I'm very invested in this topic. \n In my spare time I like to dance and \n go for a ride on my motorcycle.")
     with col3:
         st.image("image_ser.jpg")
-        st.markdown("<h5 style='text-align: center, color=#c7c7c7'>Sergei Mezhonnov </h5>", unsafe_allow_html=True)
+        st.markdown("<h5 style='text-align: center'>Sergei Mezhonnov </h5>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: center'>4th semester Wirtschaftsinformatik</h6>", unsafe_allow_html=True)
         st.text("TEXT")
 
 if selected=="Dataset":
+    st.markdown("<h1 style='text-align: center'>Twitter Dataset</h1>", unsafe_allow_html=True)
+    st.text('Our dataset is a JSON file consisting of official tweets from members of the german parliament as of march 2021. Thus it includes tweets from CDU/CSU, SPD, Die Gruenen, Die Linken, AFD, etc. /n The main problem one will soon discover is...')
     st.text('Our dataset is 8GB of JL-Data...')
     st.image("https://i.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535", caption = "My Notebook with 4GB RAM")
     if st.checkbox("Show me example"):
