@@ -15,8 +15,7 @@ with st.sidebar:
     selected = option_menu("Main Menu", ["Home", 'Settings'], 
         icons=['house', 'gear'], menu_icon="cast", default_index=1)
     selected
-with st.sidebar:
-    st.button("Text")
+
 #present your team
 with st.expander("Our Team:"):
     col1, col2, col3 = st.columns(3)
