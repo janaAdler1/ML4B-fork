@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-st.set_page_config(page_title="German Twitter Analysis")
+st.set_page_config(page_icon="🕊️", page_title="Political Party Tweet Classification")
 
 """import matplotlib.pyplot as plt
 from wordcloud import WordCloud
