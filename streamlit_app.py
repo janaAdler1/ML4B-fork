@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+st.set_page_config(page_title="German Twitter Analysis")
+
 """import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import pandas_profiling
@@ -32,7 +34,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
 """
-st.set_page_config(page_title="German Twitter Analysis")
 
 st.title('Political Party Classification')
 #present your project
