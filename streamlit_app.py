@@ -14,14 +14,11 @@ selected = option_menu(None, ["Home", "Dataset",  "Data Preparation", 'Live Demo
 if selected=="Home":
     st.markdown("<h1 style='text-align: center'>Political Party Classification</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center'>Our Goal</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center'>The goal of our project is to classify Tweets by the political party of the author</p>", unsafe_allow_html=True)
-
-    # 1. as sidebar menu
-
+    st.markdown("<p style='text-align: center'>The goal of our project is to classify Tweets of german politicans by the political party of the author</p>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center'>Our Team</h2>", unsafe_allow_html=True)
 
     #present your team
-    with st.expander("Our Team:"):
-        col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.image("image_jan.jpeg", caption = 'Jan Amend')
     with col2:
