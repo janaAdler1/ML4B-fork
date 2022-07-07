@@ -49,9 +49,12 @@ if selected=="Dataset":
 
 if selected=="Process":
     with st.expander("Business Understanding"):
-        st.text("Everybody knows Tweets. You can retweet a tweet or you can create a new one completly on your own. There are almost no limitis to what you can include in your tweet. You can use text, numbers and emojicons.")
-        st.text("Despite the almost unlimited possibilites to write a tweet one might use same patterns - like special emojis or syntax - over and over again. Furthermore members of some political parties tend to write more about special topics like 'football' and less about other topics like 'gardening'")
-        st.text("The interesting part is to find exactly these patterns. Some are quite obvious and others are rather inconspicuous. However, we do not need to find those patterns on our own and read all of the 5000 tweets, we will use KI-algorithms for this!")
+        st.text("Everybody knows Tweets. You can retweet a tweet or you can create a new one completly on your own. \n \
+        There are almost no limitis to what you can include in your tweet. You can use text, numbers and emojicons. \n \
+        Despite the almost unlimited possibilites to write a tweet one might use same patterns - like special emojis or syntax - over and over again. \n \
+        Furthermore members of some political parties tend to write more about special topics like 'football' and less about other topics like 'gardening'. \n \
+        The interesting part is to find exactly these patterns. Some are quite obvious and others are rather inconspicuous. \n\
+        However, we do not need to find those patterns on our own and read all of the 5000 tweets, we will use KI-algorithms for this!")
 
     with st.expander("Data Understanding"):
         st.text("blub")
