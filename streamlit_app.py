@@ -104,4 +104,4 @@ if selected=="Live Demo":
         if st.button("Evaluation"):
             st.write("sgd_pred")
 if selected=="Other":
-    st.download_button('Download some text', text_contents)
+    st.download_button(label='Download some text', data=csv, file_name='large_df.csv', mime='text/csv',)
