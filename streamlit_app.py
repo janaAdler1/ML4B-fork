@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(page_icon="⭐", page_title="Political Party Tweet Classification", layout="wide")
 
-selected = option_menu(None, ["Home", "Dataset",  "Process", 'Live Demo', 'Blub'], 
+selected = option_menu(None, ["Home", "Dataset",  "Process", 'Live Demo', 'Other'], 
     icons=['house', 'file-earmark-text', "cpu", 'collection-play', "cpu"], 
     menu_icon="cast", default_index=0, orientation="horizontal",
 )
@@ -103,4 +103,5 @@ if selected=="Live Demo":
             
         if st.button("Evaluation"):
             st.write("sgd_pred")
-
+if selected=="Other":
+    st.download_button('Download some text', text_contents)
