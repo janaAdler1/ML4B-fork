@@ -48,6 +48,10 @@ if selected=="Dataset":
         st.write(data)
 
 if selected=="Process":
+    col1, col2 = st.columns(2)
+    col1.markdown("<h1 style='text-align: center'>CRISP-DM</h1>", unsafe_allow_html=True)
+    col2.markdown("<p style='text-align: center'>For our project we used the procedure model CRISP-DM, which includes the following steps:</p>", unsafe_allow_html=True)
+
     with st.expander("Business Understanding"):
         st.text("Everybody knows Tweets. You can retweet a tweet or you can create a new one completly on your own. \n \
         There are almost no limitis to what you can include in your tweet. You can use text, numbers and emojicons. \n \
